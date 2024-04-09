@@ -186,6 +186,67 @@
 
 
        </code></pre>
+          <div class="form__demo">
+            <div class="form__frame">
+              <form
+                class="form"
+                name="register"
+                id="formulario"
+                method="post"
+                action="https://mocktarget.apigee.net/echo"
+              >
+                <label class="label" for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ramón Suarez"
+                  required
+                />
+                <p class="mensaje__error error-nombre">campo obligatorio</p>
+
+                <label class="label" for="apodo">Apodo</label>
+                <input
+                  type="text"
+                  id="apodo"
+                  name="apodo"
+                  placeholder="ramonsupersuarez"
+                  required
+                />
+                <p class="mensaje__error error-apodo">
+                  debe contener entre 3 y 10 caracteres; se aceptan letras
+                  minúsculas, mayúsculas y digitos del 0 al 9
+                </p>
+
+                <label class="label" for="biografia">Biografía</label>
+                <textarea id="biografia" name="biografia"> </textarea>
+                <p class="mensaje__error error-biografia">
+                  opcional, debe contener minimo 100 caracteres
+                </p>
+                <label class="label">Contraseña</label>
+                <input
+                  type="password"
+                  id="contraseña"
+                  name="contraseña"
+                  required
+                />
+                <p class="mensaje__error error-contraseña">
+                  debe contener mínimo 8 caracteres, al menos una letra
+                  mayúscula y un número.
+                </p>
+
+                <button class="button__form" type="submit" disabled>
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="frame__19">
+            <pre class="codes"><code>
+Respuesta del servidor: 
+
+            </code></pre>
+          </div>
         </article>
       </div>
     </main>
