@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Fundamentals - Diagramas VV</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="/index.html">
+          <img
+            src="assets/images/codeable-logo-sm.svg"
+            alt="codeable-logo"
+            width="135"
+            height="32"
+            class="header__logo"
+          />
+        </a>
+        <nav class="navigation">
+          <ul>
+            <li class="active"><a href="/diagramas.html">Diagramas VV</a></li>
+            <li><a href="/funciones.html">Funciones</a></li>
+            <li><a href="/dom.html">Manipulación del DOM</a></li>
+          </ul>
+        </nav>
+        <p class="header__name">Angélica Arias</p>
+      </div>
+    </header>
+    <main>
+      <div class="section-xl">
+        <article class="container__blog">
+          <h1 class="title__blog">Diagramas VV</h1>
+          <h2 class="subtitle__blog">Instrucciones</h2>
+          <p class="text__blog">
+            Dibuja el estado del diagrama de variables y valores para cada
+            momento indicado por el ejercicio. Añade una imagen del diagrama al
+            documento. El diagrama deberá contener únicamente las variables y
+            valores que permanecen en la memoria. Luego contesta las preguntas
+            dejando marcado (checked) el radio button o el/los checkboxes
+            correspondientes.
+          </p>
+          <h2 class="subtitle__blog">Ejercicios</h2>
+          <h3 class="subtitle2">Ejercicio 1</h3>
+          <p class="text__blog">
+            Analiza el siguiente código y dibuja el diagrama VV al terminar de
+            ejecutarse
+          </p>
+          <pre><code>
+            const juan = {
+            nombre: "Juan",
+            edad: 25,
+            residencia: {
+              direccion: "Loma Hermosa 240",
+              ciudad: "Lima",
+              pais: "Peru",
+            },
+          };
+          
+          const sandra = {
+            nombre: "Sandra",
+            edad: 25,
+            residencia: {
+              direccion: "Loma Hermosa 240",
+              ciudad: "Lima",
+              pais: "Peru",
+            },
+          };</code></pre>
+          <figure class="imagen__blog">
+            <img src="/assets/images/ejercicio1.png" class="diagrama__code" />
+            <figcaption class="img__description">
+              Diagrama al final de la ejecución
+            </figcaption>
+          </figure>
+          <form class="form1__blog">
+            <p class="form__option">
+              La expresión `juan.edad === sandra.edad` retorna
+            </p>
+            <label>
+              <input type="radio" id="result" name="result" checked /> true
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" /> false
+            </label>
+          </form>
+          <form class="form1__blog">
+            <p class="form__option">
+              La expresión `juan.residencia === sandra.residencia` retorna
+            </p>
+            <label>
+              <input type="radio" id="result" name="result" /> true
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" checked /> false
+            </label>
+          </form>
+          <form class="form1__blog">
+            <p class="form__option">
+              La expresión `juan.residencia.ciudad === sandra.residencia.ciudad`
+              retorna
+            </p>
+            <label>
+              <input type="radio" id="result" name="result" checked /> true
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" /> false
+            </label>
+          </form>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
