@@ -65,4 +65,26 @@ describe("Test de funciones", function () {
       assert.deepEqual(obtenerMarcador("Arsenal vs Chelsea"), [0, 0]);
     });
   });
+
+  describe("Clase Barco", function () {
+    it('debería existir un método llamado "valeLaPena"', function () {
+      const barco = new Barco(25, 3);
+      assert.isFunction(barco.valeLaPena);
+    });
+
+    it("debería devolver true si el barco vale la pena saquear", function () {
+      const barco = new Barco(25, 3);
+      assert.isTrue(barco.valeLaPena());
+    });
+
+    it("debería devolver false si el barco no vale la pena saquear", function () {
+      const barco = new Barco(18, 5);
+      assert.isFalse(barco.valeLaPena());
+    });
+
+    it("debería devolver false si el calado es exactamente 20 después de restar el peso de la tripulación", function () {
+      const barco = new Barco(23, 2);
+      assert.isFalse(barco.valeLaPena());
+    });
+  });
 });
