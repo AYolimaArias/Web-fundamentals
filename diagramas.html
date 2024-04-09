@@ -107,6 +107,63 @@
               <input type="radio" id="result" name="result" /> false
             </label>
           </form>
+          <h3 class="subtitle2">Ejercicio 2</h3>
+          <p class="text__blog">
+            Analiza el siguiente código y dibuja el diagrama VV al terminar de
+            ejecutarse
+          </p>
+          <pre><code>
+            const objeto1 = {};
+            const objeto2 = { b: 5 };
+            const objeto3 = { a: 10 };
+            
+            objeto1.a = objeto3.a;
+            objeto2.a = objeto1.a + 5;
+            objeto3.b = objeto1.b;
+            objeto1.b = 10;
+          </code></pre>
+          <figure class="imagen__blog">
+            <img src="/assets/images/ejercicio2.png" class="diagrama__code" />
+            <figcaption class="img__description">
+              Diagrama al final de la ejecución
+            </figcaption>
+          </figure>
+          <form class="form1__blog">
+            <p class="form__option">
+              La expresión `objeto1.a + objeto2.b === objeto2.a` retorna
+            </p>
+            <label>
+              <input type="radio" id="result" name="result" checked /> true
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" /> false
+            </label>
+          </form>
+          <form class="form1__blog">
+            <p class="form__option">El valor de `objeto3.b` es</p>
+            <label> <input type="radio" id="result" name="result" /> 5 </label>
+            <label> <input type="radio" id="result" name="result" /> 10 </label>
+            <label>
+              <input type="radio" id="result" name="result" /> null
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" checked /> undefined
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" /> Error
+            </label>
+          </form>
+          <form class="form1__blog">
+            <p class="form__option">
+              La expresión `objeto1.a === objeto1.b` retorna
+            </p>
+            <label>
+              <input type="radio" id="result" name="result" checked /> true
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" /> false
+            </label>
+          </form>
         </article>
       </div>
     </main>
