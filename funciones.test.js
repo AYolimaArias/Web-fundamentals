@@ -40,4 +40,29 @@ describe("Test de funciones", function () {
       assert.throws(() => generarApodo("Sam"), Error, "Nombre muy corto");
     });
   });
+
+  describe("Función obtenerMarcador", function () {
+    it('Debería devolver [4, 0] cuando el input es "El marcador es cuatro cero"', function () {
+      assert.deepEqual(obtenerMarcador("El marcador es cuatro cero"), [4, 0]);
+    });
+
+    it('Debería devolver [2, 3] cuando el input es "nuevo marcador: dos tres"', function () {
+      assert.deepEqual(obtenerMarcador("nuevo marcador: dos tres"), [2, 3]);
+    });
+
+    it('Debería devolver [2, 2] cuando el input es "dos dos"', function () {
+      assert.deepEqual(obtenerMarcador("dos dos"), [2, 2]);
+    });
+
+    it('Debería devolver [2, 0] cuando el input es "Arsenal acaba de recibir otro gol, dos cero"', function () {
+      assert.deepEqual(
+        obtenerMarcador("Arsenal acaba de recibir otro gol, dos cero"),
+        [2, 0]
+      );
+    });
+
+    it("Debería devolver [0, 0] cuando no hay números en el texto", function () {
+      assert.deepEqual(obtenerMarcador("Arsenal vs Chelsea"), [0, 0]);
+    });
+  });
 });
