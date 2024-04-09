@@ -1,0 +1,38 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-2);
+  margin: var(--spacing-3);
+}
+.label {
+  color: var(--foreground);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.875rem; /* 100% */
+}
+.form__demo {
+  border-radius: var(--rounded-lg);
+  background: var(--muted);
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-4);
+}
+.form__frame {
+  max-width: var(--width-xs);
+  margin-inline: auto;
+  border-radius: var(--rounded-lg, 0.5rem);
+  background: #fff;
+  padding-block: var(--spacing-2);
+}
+/* -----mensaje de validación---- */
+.mensaje__error {
+  display: none;
+  color: var(--danger-border);
+
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 142.857% */
+}
