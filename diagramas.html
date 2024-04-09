@@ -227,6 +227,121 @@
               <input type="radio" id="result" name="result" /> undefined
             </label>
           </form>
+          <h3 class="subtitle2">Ejercicio 4</h3>
+          <p class="text__blog">
+            Analiza el siguiente código y dibuja un diagrama VV al finalizar la
+            ejecución. Recuerda que una función es un valor representado por el
+            símbolo `( )`. No es necesario escribir el contenido de la función
+            en el diagrama.
+          </p>
+          <pre><code>
+            function Persona(nombre) {
+              this.nombre = nombre;
+            }
+            
+            Persona.prototype.presentarse = function () {
+              return `Hola, mi nombre es ${this.nombre}`;
+            };
+            
+            function Mago(nombre, casa) {
+              Persona.call(this, nombre);
+              this.casa = casa;
+            }
+            
+            Mago.prototype = Object.create(Persona.prototype);
+            Mago.prototype.constructor = Mago;
+            
+            Mago.prototype.invocarHechizo = function () {
+              return `${this.nombre} invoca un hechizo`;
+            };
+            
+            const petunia = new Persona("Petunia");
+            const harry = new Mago("Harry", "Gryffindor");
+          </code></pre>
+          <figure class="imagen__blog">
+            <img src="/assets/images/ejercicio4.png" class="diagrama__code" />
+            <figcaption class="img__description">
+              Diagrama al final de la ejecución
+            </figcaption>
+          </figure>
+          <form class="form1__blog">
+            <p class="form__option">Marca todas las correctas</p>
+            <label>
+              <input type="checkbox" id="result" name="result" checked />
+              `Persona` y `Mago` son funciones constructoras
+            </label>
+            <label>
+              <input type="checkbox" id="result" name="result" /> El prototipo
+              de `harry` es `petunia`
+            </label>
+            <label>
+              <input type="checkbox" id="result" name="result" checked /> Los
+              objetos creado con la función `Mago` tienen acceso al método
+              `presentarse`
+            </label>
+            <label>
+              <input type="checkbox" id="result" name="result" /> El uso de la
+              palabra `new` es opcional
+            </label>
+            <label>
+              <input type="checkbox" id="result" name="result" checked /> Solo
+              el objeto `harry` tiene acceso al método `invocarHechizo`
+            </label>
+
+            <p class="form__option">`harry` es una instancia de `Persona`</p>
+            <label>
+              <input type="checkbox" id="result" name="result" /> true
+            </label>
+            <label>
+              <input type="checkbox" id="result" name="result" checked /> false
+            </label>
+
+            <p class="form__option">
+              La expresión `harry.invocarHechizo.call(petunia)` retorna
+            </p>
+            <label>
+              <input type="checkbox" id="result" name="result" /> 'Harry invoca
+              un hechizo'
+            </label>
+            <label>
+              <input type="checkbox" id="result" name="result" checked />
+              'Petunia invoca un hechizo'
+            </label>
+            <label>
+              <input type="checkbox" id="result" name="result" /> Error
+            </label>
+
+            <p class="text__blog">
+              Re-escribe el código usando la sintaxis de Clases de JavaScript
+            </p>
+            <pre><code>
+              class Persona {
+                constructor(nombre) {
+                this.nombre = nombre;
+              }
+              
+              presentarse () {
+                return `Hola, mi nombre es ${this.nombre}`;
+              }
+            }
+              
+              class Mago{
+                constructor(nombre, casa) {
+                Persona.call(this, nombre);
+                this.casa = casa;
+              }
+              
+              invocarHechizo() {
+                return `${this.nombre} invoca un hechizo`;
+              }
+            }
+
+            Mago.prototype = Object.create(Persona.prototype);
+              
+              const petunia = new Persona("Petunia");
+              const harry = new Mago("Harry", "Gryffindor");
+            </code></pre>
+          </form>
         </article>
       </div>
     </main>
