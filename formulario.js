@@ -106,3 +106,19 @@ form.onsubmit = function (event) {
       console.error("Error al enviar la solicitud:", error);
     });
 };
+
+//local storage--------------------------
+function saveForm(form) {
+  const formData = new FormData(form);
+  const formDataObject = {};
+
+  for (const [key, value] of formData.entries()) {
+    if (key !== "contraseña") {
+      formDataObject[key] = value;
+    }
+  }
+
+  localStorage.setItem("formData", JSON.stringify(formDataObject));
+}
+
+form.addEventListener("change", (_event) => saveForm(form));
