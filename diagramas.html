@@ -164,6 +164,69 @@
               <input type="radio" id="result" name="result" /> false
             </label>
           </form>
+          <h3 class="subtitle2">Ejercicio 3</h3>
+          <p class="text__blog">
+            Analiza el siguiente código y dibuja un diagrama VV para cada uno de
+            los momentos indicados. Recuerda que una función es un valor
+            representado por el símbolo `( )`. No es necesario escribir el
+            contenido de la función en el diagrama.
+          </p>
+          <pre><code>
+            function agregar(arreglo, valor) {
+              return arreglo.push(valor);
+            }
+            
+            const frutas = ["pera", "manzana"];
+            
+            const resultado = agregar(frutas, "durazno");
+            
+            // Punto A: dibuja el diagrama en este punto
+            
+            const copia = frutas;
+            
+            agregar(copia, "platano");
+            
+            // Punto B: dibuja el diagrama en este punto
+          </code></pre>
+          <figure class="imagen__blog">
+            <img src="/assets/images/ejercicio3.a.png" class="diagrama__code" />
+            <figcaption class="img__description">
+              Diagrama en punto A
+            </figcaption>
+          </figure>
+          <figure class="imagen__blog">
+            <img src="/assets/images/ejercicio3.b.png" class="diagrama__code" />
+            <figcaption class="img__description">
+              Diagrama en punto B
+            </figcaption>
+          </figure>
+          <form class="form1__blog">
+            <p class="form__option">El valor de resultado `resultado` es</p>
+            <label>
+              <input type="radio" id="result" name="result" /> ['pera',
+              'manzana', 'durazno']
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" /> 'durazno'
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" checked /> 3
+            </label>
+            <label> <input type="radio" id="result" name="result" /> 4 </label>
+          </form>
+          <form class="form1__blog">
+            <p class="form__option">
+              El valor de `frutas.length` en el Punto B es
+            </p>
+            <label> <input type="radio" id="result" name="result" /> 2 </label>
+            <label> <input type="radio" id="result" name="result" /> 3 </label>
+            <label>
+              <input type="radio" id="result" name="result" checked /> 4
+            </label>
+            <label>
+              <input type="radio" id="result" name="result" /> undefined
+            </label>
+          </form>
         </article>
       </div>
     </main>
