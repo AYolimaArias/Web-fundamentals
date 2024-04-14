@@ -5,7 +5,7 @@ Este proyecto es una iniciativa para explorar los fundamentos del desarrollo web
 
 ## Descripción del Proyecto
 
-El proyecto consiste en la creación de una serie de páginas web que abordan diferentes aspectos del desarrollo web, siguiendo un diseño previamente establecido en Figma. Cada página se enfoca en un tema específico y cuenta con ejercicios prácticos para reforzar los conceptos aprendidos.
+El proyecto consiste en la creación de una serie de páginas web que abordan diferentes aspectos del desarrollo web, siguiendo un [diseño previamente establecido en Figma](https://www.figma.com/file/L1RAjebb6Wf7m78NT2Czzt/Web-Fundamentals-Individual?type=design&node-id=0-1&mode=design). Cada página se enfoca en un tema específico y cuenta con ejercicios prácticos para reforzar los conceptos aprendidos.
 
 ## Estructura del Proyecto
 
