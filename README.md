@@ -1,26 +1,26 @@
 
 # Web-fundamentals
 
-Este proyecto es una iniciativa para explorar los fundamentos del desarrollo web, abarcando desde los conceptos básicos de HTML y CSS hasta técnicas avanzadas en JavaScript, DOM, Regex y testing. El objetivo es proporcionar una introducción completa al mundo del desarrollo web, junto con ejercicios prácticos y pruebas para consolidar los conocimientos adquiridos.
+This project is an initiative to explore the fundamentals of web development, covering basic concepts of HTML and CSS to advanced techniques in JavaScript, DOM, Regex, and testing. The goal is to provide a comprehensive introduction to the world of web development, along with practical exercises and tests to reinforce the acquired knowledge.
 
-## Descripción del Proyecto
+## Project Description
 
-El proyecto consiste en la creación de una serie de páginas web que abordan diferentes aspectos del desarrollo web, siguiendo un [diseño previamente establecido en Figma](https://www.figma.com/file/L1RAjebb6Wf7m78NT2Czzt/Web-Fundamentals-Individual?type=design&node-id=0-1&mode=design). Cada página se enfoca en un tema específico y cuenta con ejercicios prácticos para reforzar los conceptos aprendidos.
+The project involves creating a series of web pages that address different aspects of web development, following a [previously established design in Figma](https://www.figma.com/file/L1RAjebb6Wf7m78NT2Czzt/Web-Fundamentals-Individual?type=design&node-id=0-1&mode=design). Each page focuses on a specific topic and includes practical exercises to reinforce the learned concepts.
 
-## Estructura del Proyecto
+## Project Structure
 
-El repositorio contiene los siguientes archivos y directorios:
+The repository contains the following files and directories:
 
-* index.html: Página principal que enlaza con las otras páginas del proyecto.
-* diagramas.html: Página dedicada a la descripción de ejercicios relacionados con la creación de diagramas VV (Vista-Modelo).
-* funciones.html: Página que aborda ejercicios relacionados con la implementación de funciones y clases.
-* dom.html: Página que describe ejercicios relacionados con la creación de elementos interactivos utilizando JavaScript y el Modelo de Objetos del Documento (DOM).
-* test.html: Página que muestra los resultados de las pruebas realizadas durante el testing del proyecto.
-  
-## Detalles de Implementación
-Se siguió el diseño proporcionado en Figma para crear las páginas web, utilizando HTML y CSS para la estructura y estilización respectivamente.
-Se implementaron ejercicios prácticos en cada página, abordando diferentes aspectos del desarrollo web, desde la estructuración hasta la interactividad con JavaScript.
-El testing del proyecto se realizó utilizando Jest y se ejecutó en funciones.test.js, con los resultados mostrados en test.html.
+- index.html: Main page linking to other project pages.
+- diagrams.html: Page dedicated to describing exercises related to creating VV (View-Model) diagrams.
+- functions.html: Page addressing exercises related to function and class implementation.
+- dom.html: Page describing exercises related to creating interactive elements using JavaScript and the Document Object Model (DOM).
+- test.html: Page displaying the results of tests performed during project testing.
+
+## Implementation Details
+- The design provided in Figma was followed to create the web pages, using HTML and CSS for structure and styling, respectively.
+- Practical exercises were implemented on each page, addressing different aspects of web development, from structuring to interactivity with JavaScript.
+- Project testing was carried out using Jest and executed in functions.test.js, with the results displayed in test.html.
 Se utilizó un enfoque de desarrollo dirigido por pruebas (TDD) para garantizar la calidad y funcionalidad del código implementado.
 
 ## Ejecución del Proyecto
