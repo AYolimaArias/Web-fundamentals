@@ -3,6 +3,7 @@
 
 This project is an initiative to explore the fundamentals of web development, covering basic concepts of HTML and CSS to advanced techniques in JavaScript, DOM, Regex, and testing. The goal is to provide a comprehensive introduction to the world of web development, along with practical exercises and tests to reinforce the acquired knowledge.
 
+- **Web application:** You can see the application in action [here](https://web-fundamentals-angelica.netlify.app/).
 ## Project Description
 
 The project involves creating a series of web pages that address different aspects of web development, following a [previously established design in Figma](https://www.figma.com/file/L1RAjebb6Wf7m78NT2Czzt/Web-Fundamentals-Individual?type=design&node-id=0-1&mode=design). Each page focuses on a specific topic and includes practical exercises to reinforce the learned concepts.
